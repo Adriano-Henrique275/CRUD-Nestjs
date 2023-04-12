@@ -3,23 +3,23 @@ import { Schema } from 'mongoose';
 export const ClientSchema = new Schema({
     idClient: {
         type: Number,
-        required: true
+        // required: true
     },
     name: {
         type: String,
-        required: true
+        // required: true
     },
     email: {
       type: String,
-      required: true
+    //   required: true
     },
     password: {
         type: String,
-        required: true
+        // required: true
     },
     cpf: {
         type: Number,
-        required: true
+        // required: true
     },
     createAt: {
         type: Date,

@@ -10,6 +10,7 @@ export class ClientController {
 
     @Post('/create')
     async createClient(@Res() res, @Body() createClientDTO: CreateClientDTO): Promise<JSON> {
+        console.log('teste create')
         const createdClient = await this.clientService.createClient(createClientDTO);
 
         return res.status(HttpStatus.OK).json({
